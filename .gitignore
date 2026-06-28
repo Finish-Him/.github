@@ -1,0 +1,16 @@
+# Gitignore para Finish-Him/.github (meta-repo)
+# Apenas meta-configs. Sem código.
+
+# Secrets
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~

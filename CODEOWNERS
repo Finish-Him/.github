@@ -1,0 +1,70 @@
+# CODEOWNERS para Finish-Him
+# Convenção: cada área/produto tem owner para auto-assignment de PRs
+# Atualizar quando times mudarem.
+#
+# Formato: pattern @owner1 @owner2
+# Ver https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default fallback (repositórios sem owner específico)
+*                          @moises-costa-rj
+
+# === Apps principais por categoria ===
+
+# OAB / Direito
+/aprovai/                   @moises-costa-rj
+/aprovai-oab/               @moises-costa-rj
+
+# Análise de dados / Dota / Polymarket
+/dota-oracle/               @moises-costa-rj
+/dota2-dashboard/           @moises-costa-rj
+/polymarket-edge/           @moises-costa-rj
+
+# Apostas / banca
+/agenda-barber-salao/       @moises-costa-rj
+/gm-bank-invest/            @moises-costa-rj
+/sporting-villa/            @moises-costa-rj
+
+# Portfolio / sites pessoais
+/portfolio/                 @moises-costa-rj
+/fast-baterias/             @moises-costa-rj
+/msc-labs-landing/          @moises-costa-rj
+/web-starters/              @moises-costa-rj
+
+# Vaults / conhecimento
+/concurso-vault/            @moises-costa-rj
+/whatsapp-vault/            @moises-costa-rj
+/atlas-v2/                  @moises-costa-rj
+/awesome-claude-skills/     @moises-costa-rj
+/ia-em-producao/            @moises-costa-rj
+
+# Tooling interno (Pi migration)
+/pi-backup-config/          @moises-costa-rj
+/msc-ai-playbook/           @moises-costa-rj
+
+# === Áreas críticas (review extra) ===
+
+# Auth/segurança (HMAC, safe-equal, secrets)
+/portfolio/src/server/lib/safe-equal.ts  @moises-costa-rj
+/sporting-villa/src/lib/session-token.ts  @moises-costa-rj
+/pi-backup-config/                      @moises-costa-rj
+
+# === Configuração e tooling ===
+
+# Workflows de CI
+/.github/workflows/        @moises-costa-rj
+
+# Configs compartilhados
+/.eslintrc.cjs              @moises-costa-rj
+/.prettierrc.json           @moises-costa-rj
+/tsconfig.json              @moises-costa-rj
+/pnpm-workspace.yaml        @moises-costa-rj
+
+# === Templates de skill/knowledge ===
+/skills/                    @moises-costa-rj
+/prompts/                   @moises-costa-rj
+
+# === Infra ===
+
+# Docker/compose
+/docker-compose*.yml       @moises-costa-rj
+/Dockerfile                 @moises-costa-rj
