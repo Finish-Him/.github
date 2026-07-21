@@ -1,102 +1,82 @@
-# Finish-Him `.github` (meta-repo)
+# Governança da conta Finish-Him
 
-Meta-repo da conta GitHub **Finish-Him** (projetos pessoais de Moises Costa). Serve como índice dos repositórios da conta e como local para *community health files* padrão (templates de PR/issue, `SECURITY.md` etc.), que o GitHub aplica automaticamente aos repos da conta que não tenham os seus próprios.
+Meta-repositório dos projetos pessoais de Moisés Costa. Ele documenta o portfólio técnico da conta e hospeda arquivos comunitários que podem ser herdados por outros repositórios.
 
-Não há código aqui: sem stack, sem build, sem deploy — apenas Markdown.
+## Visão geral
 
-> **Nota sobre CODEOWNERS:** o GitHub **não** propaga `CODEOWNERS` a partir do repo `.github` de conta de usuário (não é um community health file suportado). O arquivo que existia aqui era decorativo e foi removido em 2026-07. Repos que precisarem de code owners devem manter o próprio arquivo em `<repo>/.github/CODEOWNERS`.
+| Item | Definição |
+|---|---|
+| Status | Ativo |
+| Tipo | Governança e índice |
+| Código executável | Não |
+| Repositórios acessíveis na conta | 19 |
+| Organização empresarial | [Msc-Company-Org](https://github.com/Msc-Company-Org) |
+| Organização pública | [Detran-RJ](https://github.com/Detran-RJ) |
 
-## Repositórios da conta (2026-07-03)
+## Projetos por domínio
 
-Fonte: `gh repo list Finish-Him`. 29 repositórios — todos privados, exceto onde indicado.
+### Inteligência artificial e conhecimento
 
-### Meta / documentação
+| Repositório | Objetivo |
+|---|---|
+| `atlas-v2` | Agente RAG com WhatsApp |
+| `whatsapp-vault` | Curadoria privada de conversas exportadas |
+| `aprovai` | IA aplicada a concursos |
+| `jarvis` | Assistente pessoal de voz |
+| `polymarket-edge` | Pesquisa e paper trading |
+| `awesome-claude-skills` | Repositório público de terceiros mantido como fork/cópia de referência |
 
-| Repo | Notas |
-|------|-------|
-| `.github` | Este repo (público). Índice da conta e community health files. |
-| `Finish-Him` | README de perfil (público). |
-| `workspace-meta` | Meta-docs do workspace local (CLAUDE.md, ARCHITECTURE.md, notas de produção). |
-| `workspace-docs` | Documentação visual do workspace em HTML. Privado (contém IPs de infra). |
-| `sessoes-ai-2026-docs` | Docs de sessões de IA 2026. |
+### Portfólio e aplicações
 
-### Educação / concursos (AprovAI)
+| Repositório | Objetivo |
+|---|---|
+| `Finish-Him` | Perfil público |
+| `portfolio` | Portfólio sincronizado |
+| `finish-him-showcase` | Projetos demonstrativos |
+| `landing-ia` | Landing profissional |
+| `msc-company-workspace` | Workspace interno MSC |
+| `nextjs-dashboard-app` | Template legado consolidado em `web-starters` |
+| `web-starters` | Starters web reutilizáveis |
 
-| Repo | Notas |
-|------|-------|
-| `aprovai` | Plataforma de IA para concurseiros brasileiros. |
-| `aprovai-oab` | Base de produto do vertical OAB (visão, roadmap, marketing, conteúdo). |
-| `concurso-vault` | Vault Obsidian de estudos para concurso (backup). |
+### Dados e jogos
 
-### Dados / apostas
+| Repositório | Objetivo |
+|---|---|
+| `dota2-analytics` | Dashboard e predição de Dota 2 |
+| `game-meta-db` | Base pessoal de metagame |
+| `poker` | Estudos de estratégia para torneios |
 
-| Repo | Notas |
-|------|-------|
-| `dota-oracle` | Análise de dados de Dota 2. |
-| `dota2-dashboard` | Dashboard de Dota 2. |
-| `polymarket-edge` | Engine de dados + modelo de edge para apostas na Polymarket (Dota 2 + Copa 2026). |
-| `gm-bank-invest` | Gestão de banca / investimentos. |
-| `sporting-villa` | Projeto de apostas esportivas. |
+### Ferramentas e governança
 
-### Sites / landing pages
+| Repositório | Objetivo |
+|---|---|
+| `.github` | Este índice |
+| `workspace-meta` | Estado e auditorias do workspace |
+| `developer-tools` | Dashboards e configurações de desenvolvimento |
 
-| Repo | Notas |
-|------|-------|
-| `portfolio` | Site/portfolio pessoal. |
-| `fast-baterias` | Landing page de delivery de baterias com wizard de agendamento. |
-| `msc-labs-landing` | Landing MSC Labs (treino de modelos custom / inferência gerenciada). |
-| `landing-ia` | Landing de autoridade — funil Google Ads para o guia de IA. |
-| `web-starters` | Starters/templates web (Next.js + Supabase). |
+## Arquivos comunitários
 
-### IA / agentes / conhecimento
+Quando presentes nos caminhos suportados pelo GitHub, estes arquivos podem definir padrões para repositórios que não possuam configuração própria:
 
-| Repo | Notas |
-|------|-------|
-| `atlas-v2` | Agente RAG com WhatsApp, UI na Vercel e API na VPS. |
-| `awesome-claude-skills` | Lista curada de Claude Skills (público). |
-| `whatsapp-vault` | Curadoria e política do corpus WhatsApp (105 conversas, 91 mil mensagens). |
-| `msc-ai-playbook` | Playbook de IA da MSC: decisão estratégica API+RAG, pesquisas, arquitetura, roadmap. |
+- `CONTRIBUTING.md`;
+- `SECURITY.md`;
+- templates de issue;
+- template de pull request.
 
-### Tooling / ambiente
+`CODEOWNERS` não é herdado a partir do `.github` de uma conta pessoal. Cada projeto que precisar dessa regra deve manter seu próprio arquivo.
 
-| Repo | Notas |
-|------|-------|
-| `pi-backup-config` | Backup do ambiente Pi: prompts, temas, configs, extensions, scripts. |
-| `coding-harness` | Harness pessoal de coding agents (fork do harness-msc). |
-| `providers` | Configs de providers. |
+## Regras de organização
 
-### MSC (inbound)
+- produtos empresariais canônicos pertencem à [Msc-Company-Org](https://github.com/Msc-Company-Org);
+- projetos do Detran-RJ pertencem à [Detran-RJ](https://github.com/Detran-RJ);
+- esta conta mantém identidade profissional, experimentos e ferramentas pessoais;
+- novos repositórios devem possuir propósito, estado, execução, segurança e destino claramente documentados.
 
-| Repo | Notas |
-|------|-------|
-| `msc-company` | Inbound — canônicos da MSC vivem na org `MSC-Company-Org`. |
-| `msc-company-workspace` | Dashboard interno da MSC Company (auth, métricas de tokens, painel de investidores). |
-
-### Arquivados
-
-| Repo | Notas |
-|------|-------|
-| `hermes-bot` | Bot Telegram integrado ao Hermes Agent. |
-| `ia-em-producao` | Guia em português para levar agentes de IA/RAG/LLMs a produção (público). |
-
-## Estrutura
-
-```
-.github/
-├── README.md     # este arquivo (índice da conta)
-└── .gitignore
-```
-
-Futuro possível: `PULL_REQUEST_TEMPLATE.md`, `ISSUE_TEMPLATE/`, `SECURITY.md`, `FUNDING.yml` — esses sim são propagados pelo GitHub como padrão para os demais repos da conta.
-
-## Como atualizar o índice
+## Atualização do índice
 
 ```bash
-gh repo list Finish-Him --limit 100 --json name,description,isArchived,visibility
+gh repo list Finish-Him --limit 100 \
+  --json name,description,isArchived,visibility
 ```
 
-Atualize as tabelas acima quando repos forem criados, renomeados, arquivados ou mudarem de visibilidade.
-
-## Contexto
-
-A conta Finish-Him é uma das três usadas no workspace local (`2-Codigo/Finish-Him/`), ao lado das orgs `MSC-Company-Org` (holding MSC) e `Detran-RJ` (GovTech). Repos de produto da MSC que nasceram aqui tendem a migrar para `MSC-Company-Org` (ex.: `agenda-barber-salao`, hoje canônico lá).
+Revise este documento quando um projeto for criado, migrado ou arquivado.
